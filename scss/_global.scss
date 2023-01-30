@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+body {
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+  outline: none;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+$primary-color: #56b665;
+$text-color: #303030;
+$heading-color : #111;
+$border-radius : 60px;
+$border-radius1 : 40px;
+$fs-heading-2: 19px;
+$fs-description: 16px;
+$fs-text: 14px;
+
+$trans: all 0.3s ease-in-out;
+$padding-btn: 0 20px;
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+h2 {
+    font-size: 29px;
+}
+.py-4 {
+    padding: 4rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+
+.shadow:hover {
+    box-shadow: 0 0 18px -4px rgba(109, 109, 109, 0.64);
+}
+.container {
+    max-width: 130rem;
+    padding: 0 2rem;
+    margin: 0 auto 2rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input[type = "submit"] {
+    // margin: 2rem;
+    min-height: 50px;
+    padding: 0 4rem;
+    font-size: 1.6rem;
+    // line-height: 1.4;
+    cursor: pointer;
+}
+.form-control {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.btn {
+    padding: 1rem 2.4rem;
+    width: max-content;
+    border: 2px solid $primary-color;
+    border-radius: 50px;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+.btn:hover {
+    opacity: 0.8;
+    transition: $trans;
+    background: transparent;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(86,182,101);
+
+}
+textarea:focus, input:focus {
+    color: #fff;
+    outline: none;
+}
+input, select, textarea{
+    color: #fff;
+}
+.resize-animation-stopper * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    transition: none !important;
+}
+img {
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+
+    .section {
+        position: relative;
+        padding: 3rem 1.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .title-all {
+        text-align: center;
+        padding-top: 30px;
+    }
+.title-wrap{
+    padding: 3rem 0 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+}
+.lg-title {
+    // position: relative;
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.line {
+    // margin-top: .7rem;
+    height: 3px;
+    width: 100px;
+    background-color: $primary-color;
+}
+.sm-title{
+    display: block;
+    // max-width: 450px;
+    // padding-bottom: 2rem;
+    margin: 40px 0 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+.ft-title{
+    color: #111;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.text {
+    padding: 0 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    text-align: left;              
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    width: max-content;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #fff;
+    font-weight: 400;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+
+
+@mixin line-text($number:3) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $number;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+@mixin wh($number1: 1){
+    width: $number1;
+    height: $number1;
+} 
+
+    
