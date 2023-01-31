@@ -1,0 +1,78 @@
+.projects__row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:4rem  3rem ;
+    padding: 15px 2rem 3rem;
+    .project__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 2px 2px 4px rgba(0,0,0, .2);
+        transition: $trans;
+        height: 300px;
+        position: relative;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0,0,0, .2);
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            inset: 0;
+            background-color: rgba(0,0,0, .3);
+            display: none;
+            transition: $trans;
+            // opacity: .7;
+        }
+        &:hover::before {
+            // opacity: .7;
+            display: block;
+        }
+        &:hover .project__item--content{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        &--img{
+            height: 100%;
+        }
+        &--content{
+            position: absolute;
+            display: flex;
+            padding: 10px 10px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            transform: translateY(40px);
+            transition: $trans;
+            opacity: 0;
+            .project__item--title{
+                padding-top: 20px;
+                margin: 1.8px 0;
+                a{
+                    padding: 1rem;
+                    font-size: 16px;
+                    color: #fff;
+                    line-height: 1.7;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+            .project--btn {
+                background-color: transparent;
+                border: 1px solid #fff;
+                margin: 17px 0;
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                    .projects__row .project__item::before {
+                        opacity: .7;
+                    }
+                }
+            }
+            
+        }
+    }
+}
