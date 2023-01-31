@@ -127,8 +127,7 @@
         align-items: center;
         .site-brand--img{
             max-height: 100px;
-            width: 200px;
-           
+            width: 200px;  
         }
     }
     &-cng {
@@ -150,7 +149,7 @@
 }
 .navbar.navbar-cng .site-brand  .site-brand--img{
     filter: brightness(0);
-    -webkit-filter: brightness(0);
+     -webkit-filter: brightness(0);
 }
 .navbar.navbar-cng .navbar-item a{
     color: #999;
