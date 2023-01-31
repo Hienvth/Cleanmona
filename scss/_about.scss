@@ -289,6 +289,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        padding: 0 15px 30px;
         .ab4__logo{
             width: 186px;
             height: 186px;
@@ -296,6 +297,60 @@
             img{
                 height: 186px;
                 object-fit: contain;
+            }
+        }
+    }
+    .ab4__opinions{
+        padding: 0 15px 30px;
+        width: 100%;
+        overflow: hidden;
+
+        .ab4__opinions--list {
+            display: flex;
+            width: 240rem;
+            overflow: hidden;
+            gap: 2rem;
+            .ab4__opinion--card{
+                width: 600px;
+                display: block;
+                padding: 0 15px 30px;
+                .ab4__box--text{
+                    background-color: #fff;
+                    padding: 3rem;
+                    position: relative;
+                    margin-bottom: 3rem;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -25px;
+                        left: 50px;
+                        // background-color: red;
+                        border-top: 25px solid #fff;
+                        border-right: 25px solid transparent;
+                        border-left: 25px solid transparent;
+                    }
+                    .text{
+                        font-size: 16px;
+                    }
+                }
+                .ab4__box--user{
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem 3rem;
+                    // font-weight: 600;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    .ab4__user--name{
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        padding-right: 1rem;
+                    }
+                    span{
+                        padding-left: 1rem;
+                        font-weight: 700;
+                    }
+                }
+
             }
         }
     }
