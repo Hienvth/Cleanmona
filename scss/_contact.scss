@@ -1,0 +1,212 @@
+
+
+// #contact__box1 {
+//     background-color: #e5e5e5;
+// }
+// .contact__box1--row {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+
+// }
+// .contact__info{
+//     padding-top: 3rem;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+
+//     .card__info {
+//         padding: 0 1rem ;
+//         span i {
+//             margin-top: auto;
+//             font-size: 40px;
+//             color: $primary-color;
+//             margin-bottom: 1.5rem;
+//         }
+//         .lg-title {
+//             margin-bottom: 9px;
+//             font-size: 18px;
+//             font-weight: 400;
+//             font-family: "Montserrat", sans-serif;
+//         }
+//         .text {
+//             padding: 0;
+//         }
+//     }
+// }
+// #contact__box2 {
+//     height: max-content;
+//     padding: 3rem 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// form {
+//     width: 60%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 1rem;
+//     flex-direction: column;
+//     input {
+//         width: 50%;
+//         padding: 1rem 2rem;
+//         color: #000;
+//     }
+//     textarea {
+//         width: 50%;
+//     }
+
+// }
+
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.form {
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+
+}
+.map {
+    grid-area: map;
+}
+.contact {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0, .15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr; 
+    grid-template-areas:  "form info"  "form map"   ;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: $primary-color;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+    .inputBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 50%;
+        span { 
+
+            font-size: 14px;
+            color: $primary-color;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+        input {
+            padding: 10px;
+            color: #777777;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid $primary-color;
+            border-radius: 6px;
+        }
+        textarea {
+            padding: 10px;
+            color: #777777;
+            font-weight: 300;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid $primary-color;
+            min-height: 200px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        ::placeholder {
+            color: #777777;
+            font-style: italic;
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 2px 5px;
+        }
+
+    }
+    .row50{
+        display: flex;
+        gap: 20px;
+    }
+    .row100 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row100 .inputBox {
+        width: 100%;
+    }
+    .btn {
+        width: 100px;
+        text-align: center;
+        padding: 6px 20px;
+    }
+}
+// **********************
+.info {
+    background-color: $primary-color;
+
+    h3 {
+        color: #fff;
+        letter-spacing: .3;
+        line-height: 1.2;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    .infoBox  div {
+        display:  flex;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+            min-width: 36px;
+            height: 36px;
+            color: #000;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        p {
+            // color: #fff;
+            font-size: 12.5px;
+            font-weight: 500;
+        }
+    }
+    .social--list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // gap: .5rem;
+        li a {
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+    }
+}
+.map {
+    padding: 0;
+    border: 1px solid #777777;
+    box-shadow: 2px 4px 10px rgba(0,0,0, .4);
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
