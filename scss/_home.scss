@@ -5,22 +5,26 @@
         color: #999;
     }
     .relative-row{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
         gap: 3rem;
         .relative-middle{
             max-width: 450px;
             @include wh(416px);
+            // width: 80%;
             padding: 1rem;
             border: 1px solid #919191;
             border-radius: 100%;
             overflow: hidden;
             background-size: cover;
-            margin: 1rem;
+            margin: 1rem auto;
             img {
                 border-radius: 100%;
-
+                width: 100%;
             }
         }
         .relative-left, .relative-right{
@@ -89,6 +93,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
+
+            gap: 5rem;
             // flex-direction: column;
 
             .criteria__item{
@@ -105,7 +112,7 @@
                     font-size: $fs-description;
                     font-weight: 600;
                     color : #fff;  
-
+                    text-align: center;
                 }
                 &>span {
                     color: #fff;
@@ -232,16 +239,19 @@
     }
 }
 
-#introduce {
-    .flex{
-        flex-direction: row;
-    }
-}
+// #introduce {
+//     .flex{
+//         flex-direction: row;
+//     }
+// }
 
 
 // introduce ////////////////////
 #introduce {
     .introduce-row{
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+
         display: flex;
         gap: 2rem;
         .in-left, .in-right {
@@ -301,7 +311,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: max-content;
+    
     background: linear-gradient( rgba(0,0,0, 0.3) ,  rgba(0,0,0, .3)) , url(../images/facts.jpeg) center/cover no-repeat;
     .container {
         width: 100%;
@@ -311,17 +322,15 @@
         // justify-content: center;
         width: 100%;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
         justify-content: space-around;
-
-
-
         .facts__content {
             position: relative;
             display: flex;
             height: 150px;
             width: 270px;
             padding: 2rem;
-            
             justify-content: center;
             align-items: center;
             flex-direction: column;

@@ -1,19 +1,17 @@
 
 
 .navbar {
-    // display: flex;
     position: fixed;
     top: 0px;
     left: 0;
     width: 100%;
     z-index: 999;
-    // border-bottom: 1px solid #999;
     box-shadow: 0 4px 10px rgba( 255, 255 ,255 , .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        gap: 1rem;
         margin: 0;
     }
     .contact-method{
@@ -21,7 +19,9 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 35px;
+        flex-wrap: wrap;
+        // height: 35px;
+        height: max-content;
         background: rgba(255,255,255, .1);
         padding: 0 2rem;
         &--list {
@@ -78,14 +78,15 @@
     
     &-collapse{
         height: 80px;
-        
+        width: 100%;
+        margin:  0 auto;
+        justify-content: space-between;
     }
 
     &-nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        // column-gap: 2rem;
         gap: 1rem 2rem;
         flex-wrap: wrap;
         .navbar-item{
@@ -115,6 +116,8 @@
         }
     }
     .navbar-right {
+        display: flex;
+        gap: 3rem;
         .navbar-nav {
             justify-content: flex-end;
         }
@@ -123,38 +126,179 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin: 0 auto;
         .site-brand--img{
             max-height: 100px;
             width: 200px;  
         }
     }
     &-cng {
-        height: 60px;
+        height: 50px;
         display: flex;
         align-items: center;
         background-color: #fff;
         // box-shadow: 0 4px 5px 0 rgba(48, 48, 48, 0.2);
         transition: $trans;
-    box-shadow: 0 4px 10px rgba( 0, 0 ,0 , 0.2);
-
+        box-shadow: 0 4px 10px rgba( 0, 0 ,0 , 0.2);
+        .container {
+            width: 100%;
+            margin: 0;
+        }
         .contact-method{
             display: none;
         }
         .navbar-nav {
             color: #000;
-       }
+            i{
+                color: #999;
+            }
+            .search__box{
+                 background-color: $primary-color;
+                 &::after {
+                    border-bottom-color:$primary-color ;
+                 }
+            }
+        }
+        .navbar__search--box{
+            .search__btn {
+                span  {
+                    color: #000;
+                }
+            }
+        }
+        
     }
 }
+
+.navbar__search--box {
+    padding: 2rem;
+    position: relative;    
+    .search__btn {
+       padding: 1rem;
+       span {
+           color: #fff;
+           font-size: 1.3rem;
+       }
+       &:hover {
+           .search__box{
+               display: block;
+           }
+       }
+    }     
+        .search__box{
+           position: absolute;
+           padding: 2rem 3rem;
+           top: 90%;        
+           right: 1rem;
+           width: 300px;
+           height: 65px;
+           background-color: #fff;
+           border-top-right-radius: 15px;
+           border-radius: 15px;
+           transition: $trans;
+           z-index: 20;
+           display: none;
+           box-shadow:  0 2px 6px rgba(0,0,0, .7);
+           &::after {
+               position: absolute;
+               content: "";
+               top: -13px;
+               right: 13px;   
+               border-right: 15px solid transparent;
+               border-left: 15px solid transparent;
+               border-bottom: 15px solid #fff;
+           }
+           input {
+               margin: -5px 0 0;
+               padding: .8rem 1rem;
+               width: 100%;
+               color: #777;
+               border-radius: 6px;
+               outline: none;
+               border: 1px solid $primary-color;
+           }
+        } 
+        
+        &:hover {
+           .search__box{
+               display: block;
+           }
+       }
+}
+
 .navbar.navbar-cng .site-brand  .site-brand--img{
+    width: 150px;
     filter: brightness(0);
      -webkit-filter: brightness(0);
 }
 .navbar.navbar-cng .navbar-item a{
     color: #999;
 }
+
+.menu-collapse {
+    display: none;
+    #navbar-show-btn{
+        // display: ;
+        background-color: transparent;
+        border: none;
+        padding: 2rem;
+        color: #fff;
+    }
+    .box__menu {
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #f6f6f6;
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        #navbar-close-btn{
+            position: absolute;
+            top: 4rem;
+            right: 1rem;
+            padding: 2rem;
+            background-color: transparent;
+            border: none;
+            font-size: 25px;
+        }
+        .nav__menu {
+            margin-top: -60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+            .nav__menu--item{
+                color: #999;
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+                padding-top: 2rem 1rem;
+                font-weight: 600;
+                &:hover {
+                    background-color: #eaeaea;
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+}
+
+// ************************** header
+
+
 #header {
-    max-height: 100vh;
-    padding-top: 7rem;
+    height: 100vh;
+    padding: 11.5rem 0;
     background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0, 0.4)), url(../images/banner.jpeg) center/cover no-repeat;
     color: #fff;
     flex-direction: column;
@@ -165,7 +309,6 @@
         .lg-title {
             font-size: 50px;
             font-weight: 400;
-
             & span {
                 font-weight: 600;
             }
