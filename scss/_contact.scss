@@ -1,63 +1,4 @@
 
-
-// #contact__box1 {
-//     background-color: #e5e5e5;
-// }
-// .contact__box1--row {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-
-// }
-// .contact__info{
-//     padding-top: 3rem;
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-
-//     .card__info {
-//         padding: 0 1rem ;
-//         span i {
-//             margin-top: auto;
-//             font-size: 40px;
-//             color: $primary-color;
-//             margin-bottom: 1.5rem;
-//         }
-//         .lg-title {
-//             margin-bottom: 9px;
-//             font-size: 18px;
-//             font-weight: 400;
-//             font-family: "Montserrat", sans-serif;
-//         }
-//         .text {
-//             padding: 0;
-//         }
-//     }
-// }
-// #contact__box2 {
-//     height: max-content;
-//     padding: 3rem 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// form {
-//     width: 60%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 1rem;
-//     flex-direction: column;
-//     input {
-//         width: 50%;
-//         padding: 1rem 2rem;
-//         color: #000;
-//     }
-//     textarea {
-//         width: 50%;
-//     }
-
-// }
-
-
 .contactUs {
     position: relative;
     width: 100%;
@@ -203,7 +144,7 @@
 }
 .map {
     padding: 0;
-    border: 1px solid #777777;
+    border: 1px solid $primary-color;
     box-shadow: 2px 4px 10px rgba(0,0,0, .4);
     iframe {
         width: 100%;

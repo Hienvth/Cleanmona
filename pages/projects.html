@@ -11,17 +11,17 @@
 <body>
    
     <nav class="navbar">
-        <div class=" contact-method">
+        <div class="container contact-method">
             <div>
                 <ul class="contact-method--list">
                     <li class="contact-method--item">
                             <span><i class="fa-solid fa-location-dot"></i></span>
-                            <p class="text">319 C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</p>
+                            <p class="text">319 C16 Lý Thường Kiệt,P.15,Q.11,Tp.HCM</p>
                     </li>
                     <li class="contact-method--item">
                 
                             <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-                            <p class="text">0815391439</p>
+                            <p class="text">09123456789</p>
                 
                     </li>
                     <li class="contact-method--item">
@@ -53,15 +53,40 @@
             </div>
         </div>
         <div class="container flex navbar-collapse">
-            <div class="navbar-left">
-                <!-- <button id="navbar-close-btn" class="flex "  type="button" >
-                    <i class="fas fa-times"></i>
-                </button>
-    
+            <div class="menu-collapse">
                 <button id="navbar-show-btn" class="flex" type="button">
                     <i class="fas fa-bars"></i>
-                </button> -->
+                </button>
 
+                <div class="box__menu">
+                    <button id="navbar-close-btn" class="flex "  type="button" >
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="nav__menu">
+                        <li class="nav__menu--item">
+                           <a href="homepage.html">Trang chủ</a>
+                        </li>
+                        <li class="nav__menu--item">
+                           <a href="about.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav__menu--item">
+                           <a href="services.html">Dịch vụ</a>
+                        </li>
+                        <li class="nav__menu--item">
+                           <a href="projects.html">Dự án</a>
+                        </li>
+                        <li class="nav__menu--item">
+                           <a href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav__menu--item">
+                           <a href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    
+                   
+                </div>
+            </div>
+            <div class="navbar-left">  
                 <ul class="navbar-nav">
                     <li class="navbar-item">
                         <a href="homepage.html">TRANG CHỦ</a>
@@ -72,8 +97,7 @@
                     <li class="navbar-item">
                         <a href="services.html">DỊCH VỤ</a>
                     </li>
-                </ul>    
-
+                </ul>
             </div>
             <div class="site-brand">
                 <a href="#!" class="logo">
@@ -92,8 +116,16 @@
                         <a href="contact.html">LIÊN HỆ</a>
                     </li>
                 </ul>
+                <div class="navbar__search--box">
+                    <div class="search__btn">
+                        <span><i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <div class="search__box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
             </div>
-            
         </div>
     </nav>
 
@@ -199,7 +231,7 @@
 
 
     <footer id="contact" >
-        <div >
+        <div class="container">
             <div class="contact__box--1">
                 <div class="contact__item">
                     <span><i class="fa-solid fa-phone"></i></span>
@@ -223,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact__box--main container">
+            <div class="contact__box--main">
                 <div class="contact__box--item">
                     <h3 class="title-footer">Về chúng tôi</h3>
                     <div class="content-box">
@@ -318,25 +350,7 @@
         </div>
     </footer>
  
-    <script>
-        let navbarDiv = document.querySelector('.navbar')
-
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 105 || document.documentElement.scrollTop > 105) {
-                navbarDiv.classList.add('navbar-cng');
-            }
-            else {
-                navbarDiv.classList.remove('navbar-cng')
-            }
-        })
-        var counter = 1;
-        setInterval(function() {
-            document.getElementById('radio'+ counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        } , 5000)
+    <script src="../script.js">
     </script>
 </body>
 </html>

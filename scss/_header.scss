@@ -342,3 +342,99 @@
     color: #fff;
     background: linear-gradient( rgba(0,0,0, .2), rgba(0,0,0, 0.2)), url(../images/banner.jpg) center/cover no-repeat;
 }
+
+
+/* Mobile: width < 740px < 46.1875em*/
+@media only screen and (max-width: 739px) {
+    // header + navbar
+    .navbar {
+        .contact-method {
+            display: none;
+        }
+        .contact-icon {
+            display: none;
+        }
+        &-collapse {
+            height: max-content
+        }
+        &-cng {
+            #navbar-show-btn{
+                color: #999;
+            }
+        }
+    }
+    .navbar.navbar-cng .site-brand  .site-brand--img,
+    .navbar .site-brand  .site-brand--img{
+        width: 150px;
+        // filter: brightness(0);
+        //  -webkit-filter: brightness(0);
+        padding-left: 3rem;
+    }
+    .navbar-item {
+        opacity: 1;
+        display: none;
+    }
+    .navbar__search {
+        opacity: 1;
+        display: block;
+    }
+    #header {
+        padding: 5rem 0;
+        .container {
+            padding: 0;
+        }
+        .text-box {
+            padding: 3rem 0;
+            .sm-title {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .lg-title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .btn {
+                font-size: 14px;
+            }
+        }
+    }
+    .menu-collapse {
+        display: block;
+    }
+    // #header3 {
+
+    // }
+}
+
+/* Tablet: width >= 740px  46.25em and width < 1024px 63.9375em*/
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .navbar {
+        .contact-method {
+            height: max-content;
+            flex-wrap: wrap;
+        }
+        .contact-icon {
+            display: none;
+        }
+        &-cng {
+            #navbar-show-btn{
+                color: #999;
+                display: block;
+            }
+        }
+        .navbar__search {
+            display: block;
+            .search__btn {
+                font-size: 30px;
+            }
+        }
+        .navbar-nav{
+            display: none;
+        }
+    
+    }
+    .menu-collapse {
+        display: block;
+    }
+    
+}

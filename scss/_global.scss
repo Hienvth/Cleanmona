@@ -122,17 +122,6 @@ img {
     object-fit: cover;
 }
 
-    .section {
-        position: relative;
-        padding: 3rem 1.5rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .title-all {
-        text-align: center;
-        padding-top: 30px;
-    }
 .title-wrap{
     padding: 3rem 0 0;
     margin-bottom: 2rem;
@@ -160,20 +149,14 @@ img {
     background-color: $primary-color;
 }
 .sm-title{
-    display: block;
-    // max-width: 450px;
-    // padding-bottom: 2rem;
+    display: block; 
     margin: 40px 0 20px;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
 }
-.ft-title{
-    color: #111;
-    font-size: 18px;
-    text-transform: uppercase;
-}
+
 .text {
     padding: 0 1rem;
     font-size: 14px;
