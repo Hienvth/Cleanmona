@@ -12,6 +12,10 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         gap: 3rem;
+        .ft-title {
+            font-size: 18px;
+            color: #111 ;
+        }
         .relative-middle{
             max-width: 450px;
             @include wh(416px);

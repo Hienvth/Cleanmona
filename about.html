@@ -7,6 +7,8 @@
     <title>Giới thiệu - Cleanmona Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 <body>
    
@@ -148,22 +150,54 @@
     <section id="about__box--1" class="py-4">
         <div class="about__box1--row container">
             <div class="ab1__left">
-                <div class="wrap__view-img">
-                    <div class="creen--view img__view">
-                        <img src="./images/cleaning1.jpeg" alt="img">
+                
+                    <div class="swiper creen--view">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/service__img1.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img2.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img3.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img4.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img5.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img6.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next ab1__box--btn"></div>
+                        <div class="swiper-button-prev ab1__box--btn"></div>
                     </div>
-                    <div class="list__view-img">
-                        <div class="img__view view-img--item">
-                            <img src="./images/cleaning2.jpeg" alt="img">
-                        </div>
-                        <div class="img__view view-img--item">
-                            <img src="./images/cleaning4.jpeg" alt="img">
-                        </div>
-                        <div class="img__view view-img--item">
-                            <img src="./images/cleaning3.jpg" alt="img">
+                    <div  thumbsSlider="" class="swiper list__viewImg--choice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/service__img1.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img2.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img3.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img4.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img5.jpg" alt="img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/service__img6.jpg" alt="img">
+                            </div>
                         </div>
                     </div>
-                </div>
+               
             </div>
             <div class="ab1__right">
                 <div class="title-wrap">
@@ -421,63 +455,68 @@
                     <h3 class="ab4__title">
                         Các thương hiệu liên kết
                     </h3>
-                    <div class="ab4__opinions--list">
-                        <div class="ab4__opinion--card">
-                            <div class="ab4__box--text">
-                                <p class="text">
-                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
-                                </p>
+                    <div class="swiper ab4_wrapper">
+                        <div class="swiper-wrapper ab4__opinions--list">
+                            <div class="swiper-slide ab4__opinion--card">
+                                <div class="ab4__box--text">
+                                    <p class="text">
+                                        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
+                                    </p>
+                                </div>
+                                <div class="ab4__box--user">
+                                    <h6 class="ab4__user--name">
+                                        Trần nhựt tân
+                                    </h6>
+                                    -
+                                    <span> nhà láVilla</span>
+                                </div>
                             </div>
-                            <div class="ab4__box--user">
-                                <h6 class="ab4__user--name">
-                                    Trần nhựt tân 
-                                </h6> 
-                                - 
-                                <span> nhà láVilla</span>
+                            <div class="swiper-slide ab4__opinion--card">
+                                <div class="ab4__box--text">
+                                    <p class="text">
+                                        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
+                                    </p>
+                                </div>
+                                <div class="ab4__box--user">
+                                    <h6 class="ab4__user--name">
+                                        Trần Tên
+                                    </h6>
+                                    -
+                                    <span> nhà láVilla</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ab4__opinion--card">
+                                <div class="ab4__box--text">
+                                    <p class="text">
+                                        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
+                                    </p>
+                                </div>
+                                <div class="ab4__box--user">
+                                    <h6 class="ab4__user--name">
+                                        Trần họ
+                                    </h6>
+                                    -
+                                    <span> nhà láVilla</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ab4__opinion--card">
+                                <div class="ab4__box--text">
+                                    <p class="text">
+                                        Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
+                                    </p>
+                                </div>
+                                <div class="ab4__box--user">
+                                    <h6 class="ab4__user--name">
+                                        Trần nhựt tân
+                                    </h6>
+                                    -
+                                    <span> nhà láVilla</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ab4__opinion--card">
-                            <div class="ab4__box--text">
-                                <p class="text">
-                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
-                                </p>
-                            </div>
-                            <div class="ab4__box--user">
-                                <h3 class="ab4__user--name">
-                                    Trần nhựt tân
-                                </h3>
-                                -
-                                <span>nhà láVilla</span>
-                            </div>
-                        </div>
-                        <div class="ab4__opinion--card">
-                            <div class="ab4__box--text">
-                                <p class="text">
-                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
-                                </p>
-                            </div>
-                            <div class="ab4__box--user">
-                                <h3 class="ab4__user--name">
-                                    Trần nhựt tân
-                                </h3>
-                                -
-                                <span>nhà láVilla</span>
-                            </div>
-                        </div>
-                        <div class="ab4__opinion--card">
-                            <div class="ab4__box--text">
-                                <p class="text">
-                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép các đoạn văn bản với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề thay đổi.
-                                </p>
-                            </div>
-                            <div class="ab4__box--user">
-                                <h3 class="ab4__user--name">
-                                    Trần nhựt tân
-                                </h3>
-                                -
-                                <span>nhà láVilla</span>
-                            </div>
-                        </div>
+                        <div class="swiper-button-next ab4__btn"></div>
+                        <div class="swiper-button-prev ab4__btn"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -605,6 +644,44 @@
     </footer>
  
     <script src="./script.js">
+    </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js
+    "></script>
+    <script>
+        var swiperab4 = new Swiper(".ab4_wrapper", {
+            slidesPerView: 1,
+            spaceBetween: 4,
+            
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+// ***********************************
+    var swiperAb1 = new Swiper(".list__viewImg--choice", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperab2 = new Swiper(".creen--view", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiperAb1,
+      },
+    });
     </script>
 </body>
 </html>

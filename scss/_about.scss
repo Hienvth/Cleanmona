@@ -6,28 +6,57 @@
 }
 .ab1__left {
     display: flex;
-    // position: relative;
     flex-direction: column;
-    row-gap: 2rem;
-    height: max-content;
-    .wrap__view-img {
-        // position: absolute;
+    row-gap: 1rem;
+    // height: max-content;
+    
+    .swiper {
+        width: 100%;
+        height: 300px;
+        max-width: 500px;
+    }
+  
+    .creen--view  {
+        height: 80%;
+        width: 100%;
+      }
+  
+    .list__viewImg--choice {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+      .list__viewImg--choice .swiper-slide {
+        width: 30%;
+        height: 100%;
+        opacity: 0.4;
+        // padding: 2px;
+        // border: 2px solid #fff;
+      }
+  
+      .list__viewImg--choice .swiper-slide-thumb-active {
+        opacity: 1;
+        border: 2px solid $primary-color;
+        box-shadow: 2px 4px 5px rgba(0,0,0, 0.2);
+        transform: scale(1.1);
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .ab1__box--btn{
+        padding: 1rem 2rem;
+        color: #fff;
+        background-color: rgba(0,0,0, .4);
+      }
+      .ab1__box--btn:after, .ab1__box--btn:before{
+        font-size: 30px;
+      }
+  
 
-        height: 50%;
-        max-height: 600px;
-        img {
-            // position: absolute;
-            height: 100%;
-        }
-    }
-    .list__view-img{
-        display: flex;
-        gap: 2rem;
-        .view-img--item{
-            flex: 1;
-            height: 130px;
-        }
-    }
 
 }
 .ab1__right {
@@ -283,16 +312,19 @@
         font-size: 24px;
         color: #111111;
         font-family: "Montserrat", sans-serif;
-        margin-bottom: 12px;
+        margin-bottom: 2rem;
     }
     .ab4__list--logos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap:2rem ;
         padding: 0 15px 30px;
+        max-width: max-content;
+        
         .ab4__logo{
             width: 186px;
             height: 186px;
+           
             background-color: #fff;
             img{
                 height: 186px;
@@ -304,25 +336,31 @@
         padding: 0 15px 30px;
         width: 100%;
         overflow: hidden;
-
+    
+        .ab4__wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            padding: 0 4rem;
+        }
         .ab4__opinions--list {
-            display: flex;
-            width: 240rem;
-            overflow: hidden;
-            gap: 2rem;
+            padding: 0rem 5rem;
             .ab4__opinion--card{
-                width: 600px;
+                // width: 100%;
+                cursor:grab;
                 display: block;
-                padding: 0 15px 30px;
+                padding: 0px 15px 30px;
                 .ab4__box--text{
                     background-color: #fff;
                     padding: 3rem;
+                    max-width: 400px;
+                    max-width: 83%;
                     position: relative;
                     margin-bottom: 3rem;
                     &::before {
                         content: "";
                         position: absolute;
-                        bottom: -25px;
+                        bottom: -22px;
                         left: 50px;
                         // background-color: red;
                         border-top: 25px solid #fff;
@@ -338,6 +376,7 @@
                     align-items: center;
                     padding: 1rem 3rem;
                     // font-weight: 600;
+                    
                     font-size: 14px;
                     letter-spacing: 1px;
                     .ab4__user--name{
@@ -352,6 +391,20 @@
                 }
 
             }
+        }
+        .ab4__btn{
+            transform: translateY(-3rem);
+            color: $primary-color;
+            padding: 2rem;
+        }
+        .ab4__btn::after, .ab4__btn::before {
+        }
+        
+        .swiper-pagination{
+            color: $primary-color;
+        }
+        .swiper-pagination-clickable .swiper-pagination-bullet{
+            background-color: $primary-color;
         }
     }
 }
